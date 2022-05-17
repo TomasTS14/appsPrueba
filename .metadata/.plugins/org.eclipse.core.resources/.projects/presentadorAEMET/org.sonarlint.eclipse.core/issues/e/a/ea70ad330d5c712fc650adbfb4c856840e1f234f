@@ -1,0 +1,11 @@
+
+‰
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(à¯çşÿÿÿÿH-RMINORZ
+CODE_SMELL
+f
+java:S1128"6Remove this unused import 'javax.swing.BorderFactory'.(ˆØÇÿÿÿÿÿH/RMINORZ
+CODE_SMELL
+f
+java:S1128
+";Remove this unused import 'javax.swing.border.BevelBorder'.(óöèûH1RMINORZ
+CODE_SMELL

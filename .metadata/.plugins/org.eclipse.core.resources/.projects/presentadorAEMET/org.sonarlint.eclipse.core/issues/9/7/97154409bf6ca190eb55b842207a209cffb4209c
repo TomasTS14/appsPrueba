@@ -1,0 +1,19 @@
+
+
+java:S1319"dThe type of "week" should be an interface such as "List" rather than the implementation "ArrayList".(­ğDH‘RMINORZ
+CODE_SMELL
+‚
+java:S1450	"QRemove the "it" field and declare it as a local variable in the relevant methods.(ôŸË»şÿÿÿÿH›RMINORZ
+CODE_SMELL
+
+java:S1319"dThe type of "week" should be an interface such as "List" rather than the implementation "ArrayList".(Ò¬ì5H—RMINORZ
+CODE_SMELL
+¡
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(È ¥ÊúÿÿÿÿH”RMINORZ
+CODE_SMELL
+H
+java:S1116"Remove this empty statement.(ùßõHœRMINORZ
+CODE_SMELL
+D
+java:S1700"Rename field "week"(Î»ôùùÿÿÿÿHšRMAJORZ
+CODE_SMELL

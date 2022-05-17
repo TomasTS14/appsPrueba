@@ -2,4 +2,6 @@
 <libraryInfos>
     <libraryInfo home="/home/s4tr4/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.2.v20220201-1208" version="17.0.2"/>
     <libraryInfo home="/home/s4tr4/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.2.v20220201-1208/jre" version="17.0.2"/>
+    <libraryInfo home="/usr/lib/jvm/java-11-openjdk-amd64" version="11.0.13"/>
+    <libraryInfo home="/usr/lib/jvm/jdk-17" version="17.0.3.1"/>
 </libraryInfos>

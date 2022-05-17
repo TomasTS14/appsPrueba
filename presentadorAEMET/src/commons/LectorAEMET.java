@@ -19,8 +19,10 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import entities.Day;
+import entities.Week;
 
 public class LectorAEMET {
+	private static Week week;
 	private static ArrayList<Day> dayList;
 	private static LectorAEMET instance;
 	
@@ -33,13 +35,16 @@ public class LectorAEMET {
 
 		return instance;
 	}
-	
+	public static Week getWeek() {
+		return week;
+	}
 	public static ArrayList<Day> getArrayList(){
 		return dayList;
 	}
 	public static  void loadDayList() throws MalformedURLException, SAXException, IOException, ParserConfigurationException, ParseException {
+		dayList = new ArrayList<>();
 		Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse (new URL("http://www.aemet.es/xml/municipios/localidad_22125.xml").openStream());
-		
+		ArrayList<String> rangos;
 		NodeList daysList = doc.getElementsByTagName("dia");
 		
 		for (int i = 0 ; i < daysList.getLength(); i++) {
@@ -48,15 +53,37 @@ public class LectorAEMET {
 			String dateString = daysList.item(i).getAttributes().item(0).getNodeValue(); //parte del xml que contiene la fecha
 			Date date = new SimpleDateFormat("yyyy-M-d").parse(dateString);
 			//// trayendo rangos:
+			rangos = new ArrayList<>();
 			if (dayElement.hasChildNodes()) {
 				NodeList listaRangos =  dayElement.getElementsByTagName("prob_precipitacion");
-				for (int j = 0; j<listaRangos.
+				
+				
+				
+				for (int j = 0; j<listaRangos.getLength(); j++) {
+					int probabilidad;
+					String range="";
+					if (listaRangos.item(j).hasAttributes()) {
+						range = listaRangos.item(j).getAttributes().item(0).getNodeValue();
+						
+					}else {
+						range = "00-24";
+					}
+					if(listaRangos.item(j).getTextContent() != "") {
+						 probabilidad = Integer.parseInt(listaRangos.item(j).getTextContent());
+					}else {
+						probabilidad = 0;
+					}
+					String rangeWithData = range + ":"+ probabilidad;
+					rangos.add(rangeWithData);
+					
+				}
 			}
 					
-			dayList.add(new Day(date));
+			dayList.add(new Day(date, rangos));
 		}
+		week = new Week(dayList);
 		
-		
+
 	}
 	
 
