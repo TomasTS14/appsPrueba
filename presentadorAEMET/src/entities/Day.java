@@ -38,9 +38,9 @@ public class Day {
 	public String toString() {
 		StringBuilder strBldr = new StringBuilder();
 		strBldr.append(this.getDate().toString().substring(0, 11)+"\n");
-		for (String range: ranges) {
-			strBldr.append(range+"\n");
-		}
+//		for (String range: ranges) {
+//			strBldr.append(range+"\n");
+//		}
 		
 		
 		return strBldr.toString();
