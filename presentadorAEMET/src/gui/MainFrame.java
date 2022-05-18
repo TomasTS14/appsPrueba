@@ -1,8 +1,11 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
 import java.awt.GridLayout;
+import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -11,11 +14,14 @@ import java.text.ParseException;
 import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.ListModel;
@@ -43,33 +49,52 @@ public class MainFrame extends JFrame {
 	
 	public MainFrame() {
 		super("DATOS AEMET");
-		setSize(320,400);
-		setResizable(false);
+		setSize(650,430);
+		setResizable(true);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		
 		//setResizable(false)
 		
 		//initialize components
 		leftPanel = new JPanel();
 			leftPanel.setSize(190, 350);
+			
 		rightPanel = new JPanel();
 			rightPanel.setSize(190,350);
+
 			btnDataPanel = new JPanel();
 			infoDiaTA = new JTextArea(10, 40);
 			infoDiaTA.setEditable(false);
 			
 		lista = new JList<>();
-		showDayDataBtn = new JButton("Mostrar Datos");
-//			lista.setSize(200, 300);
-//			lista.setMinimumSize(new Dimension(250, 300));
+		showDayDataBtn = new JButton("Mostrar datos del dia");
+			showDayDataBtn.setBackground(Color.WHITE);
+		//metodos de carga;
+		try {
+			cargarLista(cargarSemana());
+		} catch (SAXException | IOException | ParserConfigurationException | ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			lista.setSize(200, 300);
+			lista.setMinimumSize(new Dimension(250, 300));
 			lista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+			JScrollPane listaPane = new JScrollPane(lista);
+			JScrollPane infoDiaPane = new JScrollPane(infoDiaTA);
 		
+			///BORDES
+			
+		lista.setBorder(BorderFactory.createTitledBorder("Selección de días"));
+		infoDiaTA.setBorder(BorderFactory.createTitledBorder("Info día"));
 
 			
 		//layouts
 		setLayout(new FlowLayout(FlowLayout.LEFT));
-		rightPanel.setLayout(new GridLayout(3, 1));
+			LayoutManager rightPanelLayout =  new BoxLayout(rightPanel, BoxLayout.Y_AXIS);
+			rightPanel.setLayout(rightPanelLayout);
+
 		btnDataPanel.setLayout(new FlowLayout());
 		
 		//agrego paneles
@@ -77,26 +102,19 @@ public class MainFrame extends JFrame {
 		add(leftPanel);
 			leftPanel.add(showDayDataBtn);
 		add(rightPanel);
+			rightPanel.add(listaPane);
+			rightPanel.add(Box.createVerticalStrut(5));
+			rightPanel.add(infoDiaPane);
 			
 			
 			
-		//metodos de carga;
-			try {
-				cargarLista(cargarSemana());
-				rightPanel.add(lista);
-				rightPanel.add(infoDiaTA);
-			
-			
-			} catch (SAXException | IOException | ParserConfigurationException | ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+
 			
 			
 			//actionListeners: 
 			
 			showDayDataBtn.addActionListener((a)->{
-				
+
 				infoDiaTA.setText(lista.getSelectedValue().wholeToString());
 			});
 			

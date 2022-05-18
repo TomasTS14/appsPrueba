@@ -62,12 +62,20 @@ public class LectorAEMET {
 				for (int j = 0; j<listaRangos.getLength(); j++) {
 					int probabilidad;
 					String range="";
-					if (listaRangos.item(j).hasAttributes()) {
-						range = listaRangos.item(j).getAttributes().item(0).getNodeValue();
-						
-					}else {
-						range = "00-24";
+					
+					if (j == 0) {
+						range = "Todo el dia";
 					}
+					else {
+						if (listaRangos.item(j).hasAttributes()) {
+							range = listaRangos.item(j).getAttributes().item(0).getNodeValue();
+							
+						}else {
+							range = "Todo el día";
+						}
+					}
+				
+
 					if(listaRangos.item(j).getTextContent() != "") {
 						 probabilidad = Integer.parseInt(listaRangos.item(j).getTextContent());
 					}else {

@@ -7,10 +7,17 @@
     <fullyQualifiedTypeName name="entities.Week"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="javax.swing.JButton"/>
-    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="javax.swing.JTextField"/>
     <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
     <fullyQualifiedTypeName name="javax.swing.ListSelectionModel"/>
+    <fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="java.awt.GridBagLayout"/>
+    <fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
+    <fullyQualifiedTypeName name="java.awt.LayoutManager"/>
+    <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.Box"/>
 </qualifiedTypeNameHistroy>
