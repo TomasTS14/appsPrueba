@@ -1,11 +1,34 @@
 
-‰
-java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(à¯çşÿÿÿÿH-RMINORZ
+g
+java:S1128";Remove this unused import 'javax.swing.border.BevelBorder'.(óöèûHÍRMINORZ
 CODE_SMELL
-f
-java:S1128"6Remove this unused import 'javax.swing.BorderFactory'.(ˆØÇÿÿÿÿÿH/RMINORZ
-CODE_SMELL
-f
+g
 java:S1128
-";Remove this unused import 'javax.swing.border.BevelBorder'.(óöèûH1RMINORZ
+"6Remove this unused import 'javax.swing.BorderFactory'.(ˆØÇÿÿÿÿÿHÏRMINORZ
+CODE_SMELL
+g
+java:S3740N"/Provide the parametrized type for this generic.(Õ”ïËÿÿÿÿÿ8Ú¼ä´0HÑRMAJORZ
+CODE_SMELL
+s	java:S125@"<This block of commented-out lines of code should be removed.(ê‘–Õüÿÿÿÿ8Ú¼ä´0HÒRMAJORZ
+CODE_SMELL
+i
+java:S1135E"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Ú¼ä´0HÓRINFOZ
+CODE_SMELL
+¬
+java:S1130Q"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(šõûÖ8Ú¼ä´0HÔRMINORZ
+CODE_SMELL
+m
+java:S2209S"5Change this instance-reference to a static reference.(æ•‡™úÿÿÿÿ8Ú¼ä´0HÖRMAJORZ
+CODE_SMELL
+m
+java:S2209T"5Change this instance-reference to a static reference.(Ú’ä¥ùÿÿÿÿ8Ú¼ä´0HØRMAJORZ
+CODE_SMELL
+b
+java:S1128"/Remove this unused import 'javax.swing.JLabel'.(ı—àÓ8Ú¼ä´0HÚRMINORZ
+CODE_SMELL
+f
+java:S1128"3Remove this unused import 'javax.swing.JTextField'.(İË—8Ú¼ä´0HÜRMINORZ
+CODE_SMELL
+j
+java:S1128"2Remove this unused import 'javax.swing.ListModel'.(ğşÃˆıÿÿÿÿ8Ú¼ä´0HŞRMINORZ
 CODE_SMELL
