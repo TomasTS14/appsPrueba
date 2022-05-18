@@ -1,34 +1,50 @@
 
-g
-java:S1128";Remove this unused import 'javax.swing.border.BevelBorder'.(óöèûHÍRMINORZ
-CODE_SMELL
-g
-java:S1128
-"6Remove this unused import 'javax.swing.BorderFactory'.(ˆØÇÿÿÿÿÿHÏRMINORZ
-CODE_SMELL
-g
-java:S3740N"/Provide the parametrized type for this generic.(Õ”ïËÿÿÿÿÿ8Ú¼ä´0HÑRMAJORZ
-CODE_SMELL
-s	java:S125@"<This block of commented-out lines of code should be removed.(ê‘–Õüÿÿÿÿ8Ú¼ä´0HÒRMAJORZ
+m
+java:S2209s"5Change this instance-reference to a static reference.(æ•‡™úÿÿÿÿ8Ú¼ä´0HÒRMAJORZ
 CODE_SMELL
 i
-java:S1135E"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Ú¼ä´0HÓRINFOZ
+java:S1135["2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Ú¼ä´0HÓRINFOZ
 CODE_SMELL
-¬
-java:S1130Q"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(šõûÖ8Ú¼ä´0HÔRMINORZ
-CODE_SMELL
-m
-java:S2209S"5Change this instance-reference to a static reference.(æ•‡™úÿÿÿÿ8Ú¼ä´0HÖRMAJORZ
-CODE_SMELL
-m
-java:S2209T"5Change this instance-reference to a static reference.(Ú’ä¥ùÿÿÿÿ8Ú¼ä´0HØRMAJORZ
+g
+java:S1128"6Remove this unused import 'javax.swing.BorderFactory'.(ˆØÇÿÿÿÿÿHÍRMINORZ
 CODE_SMELL
 b
-java:S1128"/Remove this unused import 'javax.swing.JLabel'.(ı—àÓ8Ú¼ä´0HÚRMINORZ
-CODE_SMELL
-f
-java:S1128"3Remove this unused import 'javax.swing.JTextField'.(İË—8Ú¼ä´0HÜRMINORZ
+java:S1128"/Remove this unused import 'javax.swing.JLabel'.(ı—àÓ8Ú¼ä´0HÏRMINORZ
 CODE_SMELL
 j
-java:S1128"2Remove this unused import 'javax.swing.ListModel'.(ğşÃˆıÿÿÿÿ8Ú¼ä´0HŞRMINORZ
+java:S1128"2Remove this unused import 'javax.swing.ListModel'.(ğşÃˆıÿÿÿÿ8Ú¼ä´0H×RMINORZ
+CODE_SMELL
+s	java:S125@"<This block of commented-out lines of code should be removed.(ÌóŞŸşÿÿÿÿ8ù¶0HÉRMAJORZ
+CODE_SMELL
+b
+java:S1128"/Remove this unused import 'java.awt.Dimension'.(˜‚º·8÷«ø¶0H­RMINORZ
+CODE_SMELL
+s	java:S125S"<This block of commented-out lines of code should be removed.(ê‘–Õüÿÿÿÿ8Ú¼ä´0HÒRMAJORZ
+CODE_SMELL
+¬
+java:S1130q"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(šõûÖ8Ú¼ä´0HÔRMINORZ
+CODE_SMELL
+g
+java:S3740n"/Provide the parametrized type for this generic.(Õ”ïËÿÿÿÿÿ8Ú¼ä´0HÑRMAJORZ
+CODE_SMELL
+j
+java:S1128"7Remove this unused import 'java.awt.event.ActionEvent'.(Úù“‘8òıÃ¶0H²RMINORZ
+CODE_SMELL
+g
+java:S1611b"/Remove the parentheses around the "a" parameter(¾¦“·ıÿÿÿÿ8òıÃ¶0HöRMINORZ
+CODE_SMELL
+m
+java:S1128":Remove this unused import 'java.awt.event.ActionListener'.(Ìä¹8òıÃ¶0H´RMINORZ
+CODE_SMELL
+m
+java:S2209t"5Change this instance-reference to a static reference.(Ú’ä¥ùÿÿÿÿ8Ú¼ä´0HÖRMAJORZ
+CODE_SMELL
+f
+java:S1128"3Remove this unused import 'javax.swing.JTextField'.(İË—8›ßé¶0H¯RMINORZ
+CODE_SMELL
+d
+java:S1602b",Remove useless curly braces around statement(¾¦“·ıÿÿÿÿ8ñ§‡·0HôRMINORZ
+CODE_SMELL
+g
+java:S1128";Remove this unused import 'javax.swing.border.BevelBorder'.(óöèûHÍRMINORZ
 CODE_SMELL

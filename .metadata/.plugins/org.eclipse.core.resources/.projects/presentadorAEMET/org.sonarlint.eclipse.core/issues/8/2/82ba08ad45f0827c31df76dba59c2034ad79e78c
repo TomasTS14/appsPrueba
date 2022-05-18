@@ -1,18 +1,18 @@
 
-W
-java:S1172",Remove this unused method parameter "range".(ÚşÛ×H=RMAJORZ
+—
+java:S1319"fThe type of "ranges" should be an interface such as "List" rather than the implementation "ArrayList".(ó€İõıÿÿÿÿHğRMINORZ
 CODE_SMELL
-–
-java:S1319"fThe type of "ranges" should be an interface such as "List" rather than the implementation "ArrayList".(ó€İõıÿÿÿÿH3RMINORZ
+X
+java:S1172",Remove this unused method parameter "range".(ÚşÛ×HóRMAJORZ
 CODE_SMELL
- 
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(óŞµ®ùÿÿÿÿH9RMINORZ
+S
+java:S1656"/Remove or correct this useless self-assignment.(ÄÛ¾,HîRMAJORZBUG
+‘
+java:S1319"eThe type of "range" should be an interface such as "List" rather than the implementation "ArrayList".(ÚşÛ×HõRMINORZ
 CODE_SMELL
-
-java:S1319"eThe type of "range" should be an interface such as "List" rather than the implementation "ArrayList".(ÚşÛ×H6RMINORZ
+
+java:S4165"dRemove this useless assignment; "ranges" already holds the assigned value along all execution paths.(ÄÛ¾,HïRMAJORZ
 CODE_SMELL
-
-java:S4165"dRemove this useless assignment; "ranges" already holds the assigned value along all execution paths.(ÄÛ¾,H<RMAJORZ
+¡
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(óŞµ®ùÿÿÿÿHëRMINORZ
 CODE_SMELL
-R
-java:S1656"/Remove or correct this useless self-assignment.(ÄÛ¾,H?RMAJORZBUG

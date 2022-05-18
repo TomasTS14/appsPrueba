@@ -32,15 +32,21 @@ public class Day {
 		strbldr.append(this.getDate().toString().substring(0, 11)+"\n");
 		return strbldr.toString();
 	}
-	
+	public String wholeToString() {
+		StringBuilder strBldr = new StringBuilder();
+		strBldr.append(this.getDate().toString().substring(0, 11)+"\n");
+		
+		for (String range: ranges) {
+		strBldr.append(range+"% probabilidad precipitacion"+"\n");
+		}
+		return strBldr.toString();
+
+	}
 	@Override
 	
 	public String toString() {
 		StringBuilder strBldr = new StringBuilder();
 		strBldr.append(this.getDate().toString().substring(0, 11)+"\n");
-//		for (String range: ranges) {
-//			strBldr.append(range+"\n");
-//		}
 		
 		
 		return strBldr.toString();

@@ -1,23 +1,23 @@
 
-h
-java:S2755."3Disable access to external entities in XML parsing.(÷öë„ÿÿÿÿÿHERBLOCKERZVULNERABILITY
-g
-java:S1128"4Remove this unused import 'org.xml.sax.InputSource'.(”íÍ¤8ôŒÒˆ0HÍRMINORZ
+M
+java:S1116"Remove this empty statement.(î…ŞËùÿÿÿÿHıRMINORZ
 CODE_SMELL
-L
-java:S1116"Remove this empty statement.(î…ŞËùÿÿÿÿHFRMINORZ
+¥
+java:S1130,"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(Ëª½œH‡RMINORZ
 CODE_SMELL
-›
-java:S1319)"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ªê¬HBRMINORZ
+e
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8ôŒÒˆ0H’RMINORZ
 CODE_SMELL
-ˆ
-java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ëª½œ8¨£©‡0HşRCRITICALZ
-CODE_SMELL
-¤
-java:S1130,"yRemove the declaration of thrown exception 'java.net.MalformedURLException' which is a subclass of 'java.io.IOException'.(Ëª½œHHRMINORZ
+œ
+java:S1319)"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ªê¬HRMINORZ
 CODE_SMELL
 m
-java:S4973G"<Strings and Boxed types should be compared using "equals()".(¿šî£øÿÿÿÿ8äÍ›‡0HÚRMAJORZBUG
-e
-java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8ôŒÒˆ0HËRMINORZ
+java:S4973G"<Strings and Boxed types should be compared using "equals()".(¿šî£øÿÿÿÿ8äÍ›‡0HŠRMAJORZBUG
+i
+java:S2755."3Disable access to external entities in XML parsing.(÷öë„ÿÿÿÿÿH‰RBLOCKERZVULNERABILITY
+g
+java:S1128"4Remove this unused import 'org.xml.sax.InputSource'.(”íÍ¤8ôŒÒˆ0HRMINORZ
+CODE_SMELL
+ˆ
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ëª½œ8¨£©‡0HÿRCRITICALZ
 CODE_SMELL

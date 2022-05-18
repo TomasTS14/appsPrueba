@@ -73,7 +73,7 @@ public class LectorAEMET {
 					}else {
 						probabilidad = 0;
 					}
-					String rangeWithData = range + ":"+ probabilidad;
+					String rangeWithData = range + ": " + probabilidad;
 					rangos.add(rangeWithData);
 					
 				}
