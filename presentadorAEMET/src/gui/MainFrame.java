@@ -49,21 +49,21 @@ public class MainFrame extends JFrame {
 	
 	public MainFrame() {
 		super("DATOS AEMET");
-		setSize(650,430);
-		setResizable(true);
+		setSize(670,390);
+		setResizable(false);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		getContentPane().setBackground(Color.white);
 		
-		//setResizable(false)
 		
 		//initialize components
 		leftPanel = new JPanel();
 			leftPanel.setSize(190, 350);
-			
+			leftPanel.setBackground(Color.white);
 		rightPanel = new JPanel();
 			rightPanel.setSize(190,350);
-
+			rightPanel.setBackground(Color.white);
 			btnDataPanel = new JPanel();
 			infoDiaTA = new JTextArea(10, 40);
 			infoDiaTA.setEditable(false);
